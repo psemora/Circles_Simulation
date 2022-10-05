@@ -1,0 +1,25 @@
+﻿<Window x:Class="HungerCircle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hunger Circles" Height="805" Width="805" MaxWidth="805" MaxHeight="805" MinWidth="805" MinHeight="805">
+    <Grid Height="775" VerticalAlignment="Top" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="16*"/>
+
+        </Grid.ColumnDefinitions>
+        <Canvas Name="screen" Margin="0,0,0,0" Background="Black" HorizontalAlignment="Left" Width="797" Height="775" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Button Name="btn_start" Content="Start" Canvas.Left="50" Margin="12,14,0,0" VerticalAlignment="Top" Width="75" Height="30" Background="LightBlue" FontSize="15" Click="btn_start_Click"  Panel.ZIndex="1"/>
+            <Button Name="btn_stop" Content="Pause" Canvas.Left="80" Margin="116,14,0,0" VerticalAlignment="Top" Width="75" Height="30" Background="lightblue" FontSize="15" Click="btn_stop_Click"  Panel.ZIndex="1"/>
+            <Label Name="time" Content="Time" Background="Transparent" FontSize="20" Canvas.Left="500"  Foreground="#FFF9F9F9" Height="50" Width="100" Panel.ZIndex="1" />
+            <Label Name="red" Content="Red:" FontSize="20" Canvas.Left="635" Canvas.Top="0" Background="Transparent" Foreground="#FFF9F9F9" Height="50" Width="100" Panel.ZIndex="1" />
+            <Label Name="green" Content="Green:" FontSize="20" Canvas.Left="635" Canvas.Top="30" Background="Transparent" Foreground="#FFF9F9F9" Height="50" Width="100" Panel.ZIndex="1" />
+            <Label Name="blue" Content="Blue:" FontSize="20" Canvas.Left="635" Canvas.Top="60" Background="Transparent" Foreground="#FFF9F9F9" Height="50" Width="100" Panel.ZIndex="1" />
+            <Label Name="lblTime" FontSize="20" Canvas.Left="510" Canvas.Top="30" Background="Transparent" Foreground="#FFF9F9F9" Height="50" Width="100" Panel.ZIndex="1" />
+            <Label Name="lblcount1" FontSize="20" Canvas.Left="700" Canvas.Top="0" Background="Transparent" Foreground="#FFF9F9F9" Height="50" Width="100" Panel.ZIndex="1" />
+            <Label Name="lblcount2" FontSize="20" Canvas.Left="700" Canvas.Top="30" Background="Transparent" Foreground="#FFF9F9F9" Height="50" Width="100" Panel.ZIndex="1" />
+            <Label Name="lblcount3" FontSize="20" Canvas.Left="700" Canvas.Top="60" Background="Transparent" Foreground="#FFF9F9F9" Height="50" Width="100" Panel.ZIndex="1" />
+        </Canvas>
+
+    </Grid>
+</Window>
